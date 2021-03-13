@@ -61,8 +61,7 @@ function changeLanguage_BR()
   document.getElementById('home01').innerHTML = "Inicio";
   document.getElementById('tecnology01').innerHTML = "Tecnologia";
   document.getElementById('aplications01').innerHTML = "Aplicações";
-  document.getElementById('parceiros01').innerHTML = "Parceiros";
-  document.getElementById('equipe01').innerHTML = "Equipe";
+  document.getElementById('parceiros01').innerHTML = "Parceiros";  
   document.getElementById('contato01').innerHTML = "Contato";  
 }
 
@@ -72,8 +71,7 @@ function changeLanguage_EUA()
   document.getElementById('home01').innerHTML = "Home";  
   document.getElementById('tecnology01').innerHTML = "Tecnology";
   document.getElementById('aplications01').innerHTML = "Aplications";
-  document.getElementById('parceiros01').innerHTML = "Partners";
-  document.getElementById('equipe01').innerHTML = "Team";
+  document.getElementById('parceiros01').innerHTML = "Partners";  
   document.getElementById('contato01').innerHTML = "Contact";
 }
 
