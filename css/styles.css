@@ -10081,16 +10081,17 @@ p.lead {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 3.5rem;
-  width: 3.5rem;
+  height: 3.0rem;
+  width: 3.0rem;
   background-color: #495057;
-  color: #fff;
+  color: #ffff;
   border-radius: 100%;
   font-size: 1.5rem;
-  margin-right: 1.5rem;
+  margin-right: 1.0rem;
 }
 .social-icons .social-icon:last-child {
-  margin-right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 .social-icons .social-icon:hover {
   background-color: var(--cyan);
@@ -10237,6 +10238,8 @@ model-viewer {
   background-color: #121416;
 }
 
+
+
 .gradient{
   display: flex;
   align-items: center;
@@ -10244,6 +10247,28 @@ model-viewer {
   height: 100vh;
   width: 100vw;
   background: linear-gradient(60deg, #084177, #ffc1b6, #94ebcd, #052b30);
+  background-size: 400% 400%;
+  animation: colors 15s ease-in infinite;
+}
+
+.gradient02{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(30deg, #ffc1b6, #94ebcd);
+  background-size: 400% 400%;
+  animation: colors 15s ease-in infinite;
+}
+
+.gradient03{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(30deg, #8bcdcd, #cee397);
   background-size: 400% 400%;
   animation: colors 15s ease-in infinite;
 }
@@ -10271,7 +10296,10 @@ model-viewer {
 }
 
 .centralizado {
-	text-align: center;  
+	text-align: center; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
 }
 
 .centro{    
@@ -10292,5 +10320,6 @@ model-viewer {
   background-size: 150% 150%; 
 }
 
-
-
+.ocultar{
+  color: transparent;
+}

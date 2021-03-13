@@ -6,7 +6,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Hollox</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/profile.jfif" />        
+        <link rel="icon" type="image/x-icon" href="assets/img/logo.jfif" />        
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>     
 
@@ -55,22 +55,22 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbar-list-6">
               <ul class="navbar-nav">                                               
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#home">Inicio</a></li>                
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#tecnology">Tecnologia</a></li>            
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#aplications">Aplicações</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#parceiros">Parceiros</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#equipe">Equipe</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contato">Contato</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#home" id="home01">Inicio</a></li>                
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#tecnology" id="tecnology01">Tecnologia</a></li>            
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#aplications" id="aplications01">Aplicações</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#parceiros" id="parceiros01">Parceiros</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#equipe" id="equipe01">Equipe</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contato" id="contato01">Contato</a></li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="assets/img/brazil.svg" height="25" alt="logo">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown">
+                        <img id="dropDownCurrent" src="assets/img/brazil.svg" height="25" alt="logo">
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                      <li><a class="dropdown-item" href="#"><img src="assets/img/brazil.svg" height="25" alt="logo"></a></li>
-                      <li><a class="dropdown-item" href="#"><img src="assets/img/eua.svg" height="25" alt="logo"></a></li>                      
+                      <li><a class="dropdown-item" href="#" id="dropDownBR" onclick="imgBR(), changeLanguage_BR()"><img src="assets/img/brazil.svg" height="25" alt="logo"> PT-BR</a></li>
+                      <li><a class="dropdown-item" href="#" id="drpDownEUA" onclick="imgEUA(), changeLanguage_EUA()"><img src="assets/img/eua.svg" height="25" alt="logo"> EUA</a></li>                      
                     </ul>
                   </li>                
-                </li>
+                </li>                
               </ul>
             </div>
         </nav>              
@@ -92,35 +92,54 @@
                     </div>
                 </section>
                 <hr class="m-0" />
-            </div>            
-
+            </div>      
+            
             <!-- A tecnologia-->
+            <div class="gradient02">
+                <section class="resume-section" id="tecnology">
+                    <hr class="featurette-divider">
+                    <div class="row featurette">
+                        <div class="col-md-6 order-md-2">
+                            <h1 class="featurette-heading">Através do uso da tecnologia em <span class="text-muted">realidade aumentada,</span></h1>
+                            <h4 class="featurette-heading">a Hollox traz agilidade nos processos e ganho na produtividade.</h4>
+                        </div>
+                        <div class="col-md-6 order-md-1">
+                            <img class="img-fluid img-profile mx-auto mb-1" width="450" height="300" src="assets/img/001.png" alt="" style="border-radius: 100%;"/>
+                        </div>
+                    </div>               
+                </section>   
+            </div>
+
+            <hr class="m-0" />            
+            
             <section class="resume-section" id="tecnology">
                 <hr class="featurette-divider">
                 <div class="row featurette">
-                    <div class="col-md-7 order-md-2">
-                        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-                        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+                    <div class="col-md-7">
+                        <h1 class="featurette-heading">Explique projetos complexos. <span class="text-muted">Com a solução desenvolvida pela Hollox,</span></h1>
+                        <h4 class="featurette-heading">não há dificuldades em mostrar aos seus clientes o resultado de um projeto</h4>
                     </div>
-                    <div class="col-md-5 order-md-1">
-                        <span class="d-none d-lg-block"><img class="img-fluid img-profile mx-auto mb-2" width="300" height="300" src="assets/img/profile.jfif" alt="" /></span>
+                    <div class="col-md-5">
+                        <span class="d-none d-lg-block"><img class="img-fluid img-profile mx-auto mb-2" width="450" height="300" src="assets/img/002.png" alt="" style="border-radius: 100%;"/></span>
                     </div>
                 </div>               
             </section>            
+
             <hr class="m-0" />
 
             <section class="resume-section" id="tecnology">
                 <hr class="featurette-divider">
                 <div class="row featurette">
-                    <div class="col-md-7">
-                        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-                        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+                    <div class="col-md-6 order-md-2">
+                        <h1 class="featurette-heading">Dê vida aos projetos ainda em desenho. <span class="text-muted">a Hollox permite aos seus clientes,</span></h1>
+                        <h4 class="featurette-heading">uma experiência em detalhes da estrutura do projeto real.</h4>
                     </div>
-                    <div class="col-md-5">
-                        <span class="d-none d-lg-block"><img class="img-fluid img-profile mx-auto mb-2" width="300" height="300" src="assets/img/profile.jfif" alt="" /></span>
+                    <div class="col-md-6 order-md-1">
+                        <img class="img-fluid img-profile mx-auto mb-1" width="450" height="300" src="assets/img/003.png" alt="" style="border-radius: 100%;"/>
                     </div>
                 </div>               
-            </section>
+            </section> 
+
             <hr class="m-0" />
 
             <!-- experience-->
@@ -193,7 +212,7 @@
             <hr class="m-0" />   
             
             <!-- Parceiros -->
-            <section class="resume-section" id="parceiros" style="background-color: rgb(195, 196, 197);">               
+            <section class="resume-section" id="parceiros" style="height: 100vh; width: 100vw; background-color: rgb(195, 196, 197);">               
                 <style>                   
                     .carousel {	
                         margin: 0 auto;
@@ -250,8 +269,8 @@
                 
                 <div class="container-xl">
                     <div class="row">
-                        <div class="col-md-9  mx-auto">   
-                            <h2 class="centralizado">Nossos Parceiros</br></br></h2>   
+                        <div class="col-md-10  mx-auto">   
+                            <h1 class="centralizado">Parceiros</br></br></h1>   
                                                     
                             <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
                                 <!-- Carousel indicators -->
@@ -292,54 +311,50 @@
             
             <hr class="m-0" />
            
-            <!-- Equipe-->
-            <section class="resume-section" id="equipe">
-                <h2 class="mb-5">Entre em Contato com a gente</h2>            
-                      
-                <!-- Three columns of text below the carousel -->                                            
-                <div class="row">   
-                    <div class="col-lg-4">
-                        <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" width="160" height="160" src="assets/img/alexandreBack.png" alt="" /></span>            
-                        <h3>Alexandre Back</h3>
-                        <p>And lastly this, the third column of representative placeholder content.</p>
-                        <div class="social-icons">
-                            <a class="social-icon" href="https://www.linkedin.com/in/alexandreback/"><i class="fab fa-linkedin-in"></i></a>
-                            <!--<a class="social-icon" href="https://github.com/SIA2602"><i class="fab fa-github"></i></a>-->
-                            <a class="social-icon" href="#"><i class="fab fa-instagram"></i></a>
-                            <!--<a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a>-->
-                        </div>
-                    </div><!-- /.col-lg-4 -->
+            <!-- Equipe-->  
+            <section class="resume-section" id="equipe" style="height: 100vh; width: 100vw; background-color: rgb(195, 196, 197);">                         
+                <div class="container-xl">                    
+                    <h1 class="centralizado">Fale com a gente</br></br></h1>  
 
-                    <div class="col-lg-4">
-                        <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" width="160" height="160" src="assets/img/bruna.jfif" alt="" /></span>                
-                        <h3>Bruna Tavares</h3>
-                        <p>And lastly this, the third column of representative placeholder content.</p>
-                        <div class="social-icons">
-                            <a class="social-icon" href="https://www.linkedin.com/in/brunaltavares/"><i class="fab fa-linkedin-in"></i></a>
-                            <!--<a class="social-icon" href="https://github.com/SIA2602"><i class="fab fa-github"></i></a>-->
-                            <a class="social-icon" href="#"><i class="fab fa-instagram"></i></a>
-                            <!--<a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a>-->
+                    <!-- Three columns of text below the carousel -->                                            
+                    <div class="row">   
+                        <div class="centralizado">                            
+                            <img src="assets/img/alexandreBack.png" height="160" alt="logos" style="border-radius: 100%;">                            
+                            <h3>Alexandre Back</h3>                                                       
+                            <p>Sofware Developement</p>   
+                            <div class="social-icons">
+                                <a class="social-icon" href="https://www.linkedin.com/company/holllox/"><i class="fab fa-linkedin-in"></i></a>                    
+                                <a class="social-icon" href="https://www.instagram.com/arhollox"><i class="fab fa-instagram"></i></a>                                
+                            </div>                         
                         </div>
-                    </div><!-- /.col-lg-4 --> 
-                     
-                    <div class="col-lg-4">
-                        <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" width="160" height="160" src="assets/img/profile.jfif" alt="" /></span>                
-                        <h3>Danilo Silva</h3>
-                        <p>And lastly this, the third column of representative placeholder content.</p>  
-                        <div class="social-icons">
-                            <a class="social-icon" href="https://www.linkedin.com/in/danilo-silva-628671b3/"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="social-icon" href="https://github.com/SIA2602"><i class="fab fa-github"></i></a>
-                            <!--<a class="social-icon" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a>-->
-                        </div>                      
-                    </div><!-- /.col-lg-4 -->
-                </div><!-- /.row -->
-            </section>
+
+                        <div class="centralizado">                            
+                            <img src="assets/img/bruna.jfif" height="160" alt="logos" style="border-radius: 100%;">                            
+                            <h3>Bruna Tavares</h3>                                                       
+                            <p>Sofware Developement</p>   
+                            <div class="social-icons">
+                                <a class="social-icon" href="https://www.linkedin.com/company/holllox/"><i class="fab fa-linkedin-in"></i></a>                    
+                                <a class="social-icon" href="https://www.instagram.com/arhollox"><i class="fab fa-instagram"></i></a>                                
+                            </div>                         
+                        </div>
+                        
+                        <div class="centralizado">                            
+                            <img src="assets/img/profile.jfif" height="160" alt="logos" style="border-radius: 100%;">                            
+                            <h3>Danilo Silva</h3>                                                       
+                            <p>Sofware Developement</p>   
+                            <div class="social-icons">
+                                <a class="social-icon" href="https://www.linkedin.com/company/holllox/"><i class="fab fa-linkedin-in"></i></a>                    
+                                <a class="social-icon" href="https://www.instagram.com/arhollox"><i class="fab fa-github"></i></a>                                
+                            </div>                         
+                        </div>
+                    </div>                                       
+                </div>                                       
+            </section>                
 
             <hr class="m-0" />
 
             <!-- rodape-->
-            <footer style="background: linear-gradient(60deg,var(--dark), var(--gray-dark));background-size: 400% 400%; animation: colors 15s ease-in infinite;"} >
+            <footer style="width: 100vw;background: linear-gradient(60deg,var(--dark), var(--gray-dark));background-size: 400% 400%; animation: colors 15s ease-in infinite;"} >
                 <div id="contato" class="container">
                     <div class="row text-center">
 
@@ -349,7 +364,12 @@
                             <hr style="border-top: 1.5px solid #ccc; background: transparent;">
                             <p>(47)98808-3454</p>
                             <p><a href="contato@hollox.com.br">contato@hollox.com.br</a></p>                            
-                            <p>Rua Dona Francisca · Joinville · SC</p>                            
+                            <p>Rua Dona Francisca · Joinville · SC</p>   
+                            <div class="social-icons">
+                                <a class="social-icon" href="https://www.linkedin.com/company/holllox/"><i class="fab fa-linkedin-in"></i></a>                    
+                                <a class="social-icon" href="https://www.instagram.com/arhollox"><i class="fab fa-instagram"></i></a>
+                                <a class="social-icon" href="https://www.youtube.com/channel/UCxHd5ruQZ3ZsEC08xYRdHQQ"><i class="fab fa-youtube"></i></a>
+                            </div>                         
                         </div>                    
 
                         <div class="col-md-4">                            
