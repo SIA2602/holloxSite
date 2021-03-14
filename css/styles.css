@@ -547,8 +547,8 @@ pre code {
 .container-lg,
 .container-md,
 .container-sm {
-  width: 100%;
-  padding-right: 0.75srem;
+  width: 100vw;
+  padding-right: 0.75rem;
   padding-left: 0.75rem;
   margin-right: auto;
   margin-left: auto;
@@ -10273,6 +10273,28 @@ model-viewer {
   animation: colors 15s ease-in infinite;
 }
 
+.gradient_Pag02{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  width: 100vw;
+  background: linear-gradient(30deg, #ffc1b6, #b6eaff);
+  background-size: 400% 400%;
+  animation: colors 15s ease-in infinite;
+}
+
+.gradient_Pag03{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  width: 100vw;
+  background: linear-gradient(30deg, #ffd9d2, #b6eaff);
+  background-size: 400% 400%;
+  animation: colors 15s ease-in infinite;
+}
+
 @keyframes colors{
   0%{
     background-position: 0% 50%;
@@ -10322,4 +10344,22 @@ model-viewer {
 
 .ocultar{
   color: transparent;
+}
+
+.posIMG_Pag02{    
+  margin-left: 9vw;
+  margin-right: 0;  
+  margin-top: 15vh;
+}
+
+.posIMG_Pag03{    
+  margin-left: 0;
+  margin-right: 0;  
+  margin-top: 12vh;
+}
+
+.posIMG_Pag04{    
+  margin-left: 9vw;
+  margin-right: 0;  
+  margin-top: 12vh;
 }
