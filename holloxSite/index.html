@@ -12,6 +12,24 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
+    <!-- 🚨 REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+
+    <!-- 💁 OPTIONAL: Intersection Observer polyfill for better performance in Safari and IE11 -->
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+
+    <!-- 💁 OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
+    <script src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.js"></script>
+
+    <!-- 💁 OPTIONAL: Fullscreen polyfill is needed to fully support AR features -->
+    <script src="https://unpkg.com/fullscreen-polyfill@1.0.2/dist/fullscreen.polyfill.js"></script>
+
+    <!-- 💁 OPTIONAL: Include prismatic.js for Magic Leap support -->
+    <script src="https://unpkg.com/@magicleap/prismatic/prismatic.min.js"></script>
+    
+    <!-- 💁 OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>    
+    
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script> 
 
@@ -62,47 +80,14 @@
       <!-- rodape-->
       <footer class="gradient" id="home">
         <div class="container">
-        <div class="row text-center">
-  
-          <div class="col-md-4">
-              <hr style="border-top: 1.5px solid #ccc; background: transparent;">
-              <img src="http://hollox.com.br/img/logo.png" height="30" alt="logo">
-              <hr style="border-top: 1.5px solid #ccc; background: transparent;">
-              <p>(47)98808-3454</p>
-              <p><a href="contato@hollox.com.br">contato@hollox.com.br</a></p>                            
-              <p>Rua Dona Francisca · Joinville · SC</p>   
-              <div class="social-icons">
-                  <a class="social-icon" href="https://www.linkedin.com/company/holllox/"><i class="fab fa-linkedin-in"></i></a>                    
-                  <a class="social-icon" href="https://www.instagram.com/arhollox"><i class="fab fa-instagram"></i></a>
-                  <a class="social-icon" href="https://www.youtube.com/channel/UCxHd5ruQZ3ZsEC08xYRdHQQ"><i class="fab fa-youtube"></i></a>
-              </div>                         
-          </div>                    
-  
-          <div class="col-md-4">                            
-              <hr style="border-top: 1.5px solid #ccc; background: transparent;">
-              <h4 style="color:white"><a href="#home">Inicio</a></h4>
-              <hr style="border-top: 1.5px solid #ccc; background: transparent;">                            
-              <p><a href="#tecnology">Tecnologia</a></p>
-              <p><a href="#aplications">Aplicações</a></p>
-              <p><a href="#parceiros">Parceiros</a></p> 
-              <p><a href="#equipe">Equipe</a></p>                           
+          <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class="featurette-heading"></br></br>Explicar um projeto não é fácil mas <span class="text-muted">nós</span> podemos <span class="text-muted">te ajudar</span> com isso...  <a type="button" class="btn btn-outline-light btn-lg" href="#tecnology">Saiba mais »</a></h2>
+            </div>
+              <div class="col-md-5">
+                <img width="500" src="assets/img/Phone.png" alt="" />
+            </div>
           </div>
-          
-          <div class="col-md-4">                    
-              <hr style="border-top: 1.5px solid #ccc; background: transparent;">
-              <h4 style="color:white">Nossos Segmentos</h4>
-              <hr style="border-top: 2px solid #ccc; background: transparent;">
-              <p>Industrial</p>
-              <p>Engenharia de Produto</p>                            
-              <p>Arquitetura</p>
-              <p>Gastronômico</p>                    
-          </div>
-  
-          <div class="col-12">
-              <hr style="border-top: 1.5px solid #ccc; background: transparent;">
-              <p class="text-center">&copy; Copyright 2021 <a href="#home">Hollox</a> · All rights reserved</p>
-          </div>
-        </div>
         </div>
       </footer>      
 
@@ -152,9 +137,86 @@
 
       </div><!-- /.container -->
 
+      <hr class="m-0" />
+
+      <footer class="gradientContato" id="aplications">
+        <div class="container-xl">
+          <div class="col-12">
+            <h2 style="text-align: center;">ESCANEIE O QRCODE PARA VISUALIZAR EM SEU AMBIENTE</h2>
+            <p style="text-align: center;">É necessário o uso de um celular.</br></br><p>
+          </div>
+                              
+          <div class="row text-center">
+            <div class="col-md-4">          
+              <div id="card">
+                <model-viewer id="paused-change-demo"
+                    src="https://cdn.glitch.com/5b7a8ebc-1de7-47b4-8928-0788606b2faf%2FmodeloFORMULA_retirada.glb?v=1598569548732"      
+                    shadow-intensity="3"
+                    camera-controls autoplay animation-name="action01"                  
+                    interaction-prompt="auto"
+                    auto-rotate ar magic-leap> 
+                    
+                    <div style=" background-color: white;
+                        border-radius: 30px;
+                        border: none;
+                        position: absolute; 
+                        top: 4vh; 
+                        right: 3vw; ">
+                        <img src="assets/img/formula.svg" width="85vw"> 
+                    </div>  
+                </model-viewer>                            
+              </div> 
+            </div><!-- /.col-lg-4 -->
+  
+            <div class="col-md-4">          
+              <div id="card">
+                <model-viewer id="paused-change-demo"
+                    src="https://cdn.glitch.com/5b7a8ebc-1de7-47b4-8928-0788606b2faf%2FmodeloFORMULA_retirada.glb?v=1598569548732"      
+                    shadow-intensity="3"
+                    camera-controls autoplay animation-name="action01"                  
+                    interaction-prompt="auto"
+                    auto-rotate ar magic-leap> 
+                    
+                    <div style=" background-color: white;
+                        border-radius: 30px;
+                        border: none;
+                        position: absolute; 
+                        top: 4vh; 
+                        right: 3vw; ">
+                        <img src="assets/img/formula.svg" width="85vw"> 
+                    </div>  
+                </model-viewer>                            
+              </div> 
+            </div><!-- /.col-lg-4 -->
+  
+            <div class="col-md-4">          
+              <div id="card">
+                <model-viewer id="paused-change-demo"
+                    src="https://cdn.glitch.com/5b7a8ebc-1de7-47b4-8928-0788606b2faf%2FmodeloFORMULA_retirada.glb?v=1598569548732"      
+                    shadow-intensity="3"
+                    camera-controls autoplay animation-name="action01"                  
+                    interaction-prompt="auto"
+                    auto-rotate ar magic-leap> 
+                    
+                    <div style=" background-color: white;
+                        border-radius: 30px;
+                        border: none;
+                        position: absolute; 
+                        top: 4vh; 
+                        right: 3vw; ">
+                        <img src="assets/img/formula.svg" width="85vw"> 
+                    </div>  
+                </model-viewer>                            
+              </div> 
+            </div><!-- /.col-lg-4 -->
+            
+          </div><!-- /.row -->
+        </div>
+      </footer>
+
       <hr class="m-0" /> 
 
-      <footer class="gradient" id="parceiros">
+      <footer class="gradient02" id="parceiros">
         <section class="resume-section">               
           <style>                   
               .carousel {	
@@ -255,7 +317,7 @@
 
       <hr class="m-0" />
 
-      <footer class="gradient" id="contato">
+      <footer class="gradientContato" id="contato">
         <div class="container-xl">
           <div class="col-12">
             <h2 style="text-align: center;">Fale com a Gente</br></br></h2>
@@ -263,32 +325,32 @@
           <div class="row text-center">
             <div class="col-md-4">          
               <img src="assets/img/alexandreBack.png" height="160" alt="logos" style="border-radius: 100%;">
-              <h3>Bruna Tavares</h3>                                                       
-              <p>Comercial Sales</p>   
+              <h3>Alexandre Back</h3>                                                       
+              <p>Customer Relationship</p>   
               <div class="social-icons">
-                <a class="social-icon" href="https://www.linkedin.com/company/holllox/"><i class="fab fa-linkedin-in"></i></a>                    
-                <a class="social-icon" href="https://www.instagram.com/arhollox"><i class="fab fa-instagram"></i></a>                                
+                <a class="social-icon" href="https://www.linkedin.com/in/alexandreback/"><i class="fab fa-linkedin-in"></i></a>                    
+                <a class="social-icon" href="https://www.instagram.com/alexandreback"><i class="fab fa-instagram"></i></a>                                
               </div>
             </div><!-- /.col-lg-4 -->
   
             <div class="col-md-4">
-            <img src="assets/img/alexandreBack.png" height="160" alt="logos" style="border-radius: 100%;">
-            <h3>Bruna Tavares</h3>                                                       
-            <p>Comercial Sales</p>   
-            <div class="social-icons">
-            <a class="social-icon" href="https://www.linkedin.com/company/holllox/"><i class="fab fa-linkedin-in"></i></a>                    
-            <a class="social-icon" href="https://www.instagram.com/arhollox"><i class="fab fa-instagram"></i></a>                                
-            </div>
+              <img src="assets/img/bruna.jfif" height="160" alt="logos" style="border-radius: 100%;">
+              <h3>Bruna Tavares</h3>                                                       
+              <p>Comercial Sales</p>   
+              <div class="social-icons">
+                <a class="social-icon" href="https://www.linkedin.com/in/brunaltavares/"><i class="fab fa-linkedin-in"></i></a>                    
+                <a class="social-icon" href="https://www.instagram.com/brultavares"><i class="fab fa-instagram"></i></a>                                
+              </div>
             </div><!-- /.col-lg-4 -->
   
             <div class="col-md-4">
-            <img src="assets/img/alexandreBack.png" height="160" alt="logos" style="border-radius: 100%;">
-            <h3>Bruna Tavares</h3>                                                       
-            <p>Comercial Sales</p>   
-            <div class="social-icons">
-            <a class="social-icon" href="https://www.linkedin.com/company/holllox/"><i class="fab fa-linkedin-in"></i></a>                    
-            <a class="social-icon" href="https://www.instagram.com/arhollox"><i class="fab fa-instagram"></i></a>                                
-            </div>
+              <img src="assets/img/profile.jfif" height="160" alt="logos" style="border-radius: 100%;">
+              <h3>Danilo Silva</h3>                                                       
+              <p>Sofware Developement</p>   
+              <div class="social-icons">
+                <a class="social-icon" href="https://www.linkedin.com/in/danilo-silva-628671b3/"><i class="fab fa-linkedin-in"></i></a>                    
+                <a class="social-icon" href="https://github.com/SIA2602"><i class="fab fa-github"></i></a>                                
+              </div>
             </div><!-- /.col-lg-4 -->
             
           </div><!-- /.row -->
@@ -310,9 +372,9 @@
             <p><a href="contato@hollox.com.br">contato@hollox.com.br</a></p>                            
             <p>Rua Dona Francisca · Joinville · SC</p>   
             <div class="social-icons">
-                <a class="social-icon" href="https://www.linkedin.com/company/holllox/"><i class="fab fa-linkedin-in"></i></a>                    
-                <a class="social-icon" href="https://www.instagram.com/arhollox"><i class="fab fa-instagram"></i></a>
-                <a class="social-icon" href="https://www.youtube.com/channel/UCxHd5ruQZ3ZsEC08xYRdHQQ"><i class="fab fa-youtube"></i></a>
+              <a class="social-icon" href="https://www.linkedin.com/company/holllox/"><i class="fab fa-linkedin-in"></i></a>                    
+              <a class="social-icon" href="https://www.instagram.com/arhollox"><i class="fab fa-instagram"></i></a>
+              <a class="social-icon" href="https://www.youtube.com/channel/UCxHd5ruQZ3ZsEC08xYRdHQQ"><i class="fab fa-youtube"></i></a>
             </div>                         
         </div>                    
 
@@ -345,6 +407,17 @@
       </footer>
     </div>
 
+    <!-- 💁 Include both scripts below to support all browsers! -->
+    <!-- Loads <model-viewer> for modern browsers: -->
+    <script type="module"
+    src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
+    </script>
+
+    <!-- Loads <model-viewer> for old browsers like IE11: -->
+    <script nomodule
+    src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+    </script>
+
     <!-- Bootstrap core JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -353,5 +426,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
     
+    <script src="js/scripts.js"></script>
   </body>
 </html>
