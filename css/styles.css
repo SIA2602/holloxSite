@@ -10277,7 +10277,7 @@ model-viewer {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 70vh;
+  height: 100vh;
   width: 100vw;
   background: linear-gradient(30deg, #ffc1b6, #b6eaff);
   background-size: 400% 400%;
@@ -10288,7 +10288,7 @@ model-viewer {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 70vh;
+  height: 100vh;
   width: 100vw;
   background: linear-gradient(30deg, #ffd9d2, #b6eaff);
   background-size: 400% 400%;
