@@ -6157,8 +6157,11 @@ button.bg-light:focus {
   background-color: #dae0e5 !important;
 }
 
-.bg-dark {
-  background-color: #343a40 !important;
+
+.bg-dark {  
+  background: linear-gradient(60deg, var(--dark), var(--dark), #042849,  #073968,#042849,var(--dark), var(--dark));
+  background-size: 400% 400%;
+  animation: colors 15s ease-in infinite;
 }
 
 a.bg-dark:hover, a.bg-dark:focus,
@@ -10214,9 +10217,9 @@ section.resume-section .resume-section-content {
   margin: auto;
   display: flex;
   flex-direction: column;
-  width: 22vw;
-  height: 55vh;    
-  border-radius: 15px;
+  width: 300px;
+  height: 460px;    
+  border-radius: 25px;
   box-shadow: 0px 0px 3px rgba(1.5, 0, 0, 0.7);
   overflow: hidden;  
   background-color: var(--dark);   
