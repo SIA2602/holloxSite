@@ -62,15 +62,18 @@
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#parceiros" id="parceiros01">Parceiros</a></li>                
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contato" id="contato01">Contato</a></li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown">
-                    <img id="dropDownCurrent" src="assets/img/brazil.svg" height="25" alt="logo">
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#" id="dropDownBR" onclick="imgBR(), changeLanguage_BR()"><img src="assets/img/brazil.svg" height="25" alt="logo"> PT-BR</a></li>
-                  <li><a class="dropdown-item" href="#" id="drpDownEUA" onclick="imgEUA(), changeLanguage_EUA()"><img src="assets/img/eua.svg" height="25" alt="logo"> EUA</a></li>                      
-                </ul>
-              </li>                
-            </li>                
+              <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-secondary active">
+                  <input type="radio" name="options"  id="dropDownBR" onclick="changeLanguage_BR()" autocomplete="off" checked> <img src="assets/img/brazil.svg" height="25" alt="logo">
+                </label>
+                <label class="btn btn-secondary">
+                  <input type="radio" name="options" id="drpDownEUA" onclick="changeLanguage_EUA()" autocomplete="off"><img src="assets/img/eua.svg" height="25" alt="logo">
+                </label>
+                <label class="btn btn-secondary">
+                  <input type="radio" name="options" id="option3" autocomplete="off"> <img src="assets/img/germany.svg" height="25" alt="logo">
+                </label>
+              </div>
+            </li>                           
           </ul>
         </div>
       </nav>
