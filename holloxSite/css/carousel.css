@@ -10337,3 +10337,32 @@ model-viewer {
   background-size: 400% 400%;
   animation: colors 15s ease-in infinite;
 }
+
+.loader{
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: #001d30;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader > img{
+  width: 25vw;
+}
+
+.loader.hidden{
+  animation: fadeOut 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut{
+  100%{
+    opacity: 0;
+    visibility: hidden;
+  }
+}
