@@ -140,7 +140,7 @@ function changeLanguage_BR_Mobile()
   document.getElementById('engProduto').innerHTML = "Engenharia de Produto";
   document.getElementById('engCivil').innerHTML = "Engenharia Civil";
   document.getElementById('arquitetura').innerHTML = "Arquitetura";
-  document.getElementById('Aplicacoes').innerHTML = "ESCANEIE O QRCODE PARA VISUALIZAR EM SEU AMBIENTE"; 
+  document.getElementById('Aplicacoes').innerHTML = "CLIQUE NO MODELO VISUALIZAR EM SEU AMBIENTE"; 
   document.getElementById('AplicacoesSub').innerHTML = "É necessário o uso de um celular.</br></br>";
   document.getElementById('Parceiros').innerHTML = "Parceiros</br></br>";
   document.getElementById('faleConosco').innerHTML = "Fale com a Gente</br></br>";  
@@ -172,7 +172,7 @@ function changeLanguage_EUA_Mobile()
   document.getElementById('engProduto').innerHTML = "Product Engineering";
   document.getElementById('engCivil').innerHTML = "Civil Engineering";
   document.getElementById('arquitetura').innerHTML = "Architecture"; 
-  document.getElementById('Aplicacoes').innerHTML = "Scan a QRCODE to get started now"; 
+  document.getElementById('Aplicacoes').innerHTML = "CLICK ON THE VIEW MODEL IN YOUR ENVIRONMENT"; 
   document.getElementById('AplicacoesSub').innerHTML = "Place interactive digital objects in a real environment.</br></br>";
   document.getElementById('Parceiros').innerHTML = "Partners</br></br>";
   document.getElementById('faleConosco').innerHTML = "Contact Us</br></br>"; 
