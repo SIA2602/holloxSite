@@ -186,3 +186,28 @@ function changeLanguage_EUA_Mobile()
   document.getElementById('Pg0402').innerHTML = "Improves its quality and saves remarkably traveling and downtime costs.";  
 }
 
+//mudando imagem botao AR para ingles
+function buttonImageAR_EUA()
+{
+  var img = document.getElementById("arButton1");
+  img.src="https://cdn.glitch.com/33362749-0d41-4803-8d25-03abce69741a%2FbuttonAR_EUA.png?v=1598445620591";
+
+  var img2 = document.getElementById("arButton2");
+  img2.src="https://cdn.glitch.com/33362749-0d41-4803-8d25-03abce69741a%2FbuttonAR_EUA.png?v=1598445620591";
+
+  var img3 = document.getElementById("arButton3");
+  img3.src="https://cdn.glitch.com/33362749-0d41-4803-8d25-03abce69741a%2FbuttonAR_EUA.png?v=1598445620591";
+}
+
+//mudando imagem botao AR para portugues
+function buttonImageAR_BR()
+{
+  var img = document.getElementById("arButton1");
+  img.src="https://cdn.glitch.com/33362749-0d41-4803-8d25-03abce69741a%2FbuttonAR_BR.png?v=1598445617658";
+
+  var img1 = document.getElementById("arButton2");
+  img1.src="https://cdn.glitch.com/33362749-0d41-4803-8d25-03abce69741a%2FbuttonAR_BR.png?v=1598445617658";
+
+  var img2 = document.getElementById("arButton3");
+  img2.src="https://cdn.glitch.com/33362749-0d41-4803-8d25-03abce69741a%2FbuttonAR_BR.png?v=1598445617658";
+}

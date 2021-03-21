@@ -69,10 +69,10 @@
               <li class="nav-item dropdown">
                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
                   <label class="btn btn-secondary active">
-                    <input type="radio" name="options"  id="dropDownBR" onclick="changeLanguage_BR_Mobile()" autocomplete="off" checked> <img src="assets/img/brazil.svg" height="25" alt="logo">
+                    <input type="radio" name="options"  id="dropDownBR" onclick="changeLanguage_BR_Mobile(), buttonImageAR_BR()" autocomplete="off" checked> <img src="assets/img/brazil.svg" height="25" alt="logo">
                   </label>
                   <label class="btn btn-secondary">
-                    <input type="radio" name="options" id="drpDownEUA" onclick="changeLanguage_EUA_Mobile()" autocomplete="off"><img src="assets/img/eua.svg" height="25" alt="logo">
+                    <input type="radio" name="options" id="drpDownEUA" onclick="changeLanguage_EUA_Mobile(), buttonImageAR_EUA()" autocomplete="off"><img src="assets/img/eua.svg" height="25" alt="logo">
                   </label>                
                 </div>
               </li> 
@@ -108,7 +108,7 @@
 
       <footer class="container marketing" id="tecnology">   
         
-        <hr class="featurette-divider"></br></br>
+        <hr class="featurette-divider"></br></br></br>
 
         <div class="row featurette">
           <div class="col-md-5 order-md-2">
@@ -174,7 +174,7 @@
 
                       <div class="carousel-item active">                            
                           <div class="row">                              
-                            <div id="cardMobile">                
+                            <div id="cardMobile" style="background-image: url('assets/img/cellPhoneMobile.png'); width: 180px;">                
                               <model-viewer id="paused-change-demo"
                                   src="https://cdn.glitch.com/5b7a8ebc-1de7-47b4-8928-0788606b2faf%2FmodeloFORMULA_retirada.glb?v=1598569548732"      
                                   shadow-intensity="3"
@@ -186,10 +186,11 @@
                                       border-radius: 30px;
                                       border: none;
                                       position: absolute; 
-                                      top: 6vh; 
+                                      top: 32vh; 
                                       right: 2vw; ">
-                                      <img src="assets/img/formula.svg" width="85vw"> 
+                                      <a href="https://hollox.com.br/formula.php"><img id="arButton1" src="https://cdn.glitch.com/33362749-0d41-4803-8d25-03abce69741a%2FbuttonAR_BR.png?v=1598445617658" width="130vw"  height="30"></a> 
                                   </div>  
+                                  <button slot="ar-button" style="visibility: hidden;"></button>
                               </model-viewer>                            
                             </div>                                      
                           </div>
@@ -197,7 +198,7 @@
 
                       <div class="carousel-item" >
                         <div class="row">                              
-                          <div id="cardMobile">                
+                          <div id="cardMobile" style="background-image: url('assets/img/cellPhoneMobile.png'); width: 180px;">                
                             <model-viewer id="paused-change-demo"
                                 src="https://cdn.glitch.com/5b7a8ebc-1de7-47b4-8928-0788606b2faf%2FmodeloFORMULA_retirada.glb?v=1598569548732"      
                                 shadow-intensity="3"
@@ -209,10 +210,11 @@
                                     border-radius: 30px;
                                     border: none;
                                     position: absolute; 
-                                    top: 6vh; 
+                                    top: 32vh; 
                                     right: 2vw; ">
-                                    <img src="assets/img/formula.svg" width="85vw"> 
+                                    <a href="https://hollox.com.br/robo.php"><img id="arButton2" src="https://cdn.glitch.com/33362749-0d41-4803-8d25-03abce69741a%2FbuttonAR_BR.png?v=1598445617658" width="130vw"  height="30"></a> 
                                 </div>  
+                                <button slot="ar-button" style="visibility: hidden;"></button>
                             </model-viewer>                            
                           </div>                                      
                         </div>
@@ -220,7 +222,7 @@
 
                       <div class="carousel-item">
                         <div class="row">                              
-                          <div id="cardMobile">                
+                          <div id="cardMobile" style="background-image: url('assets/img/cellPhoneMobile.png'); width: 180px;">                
                             <model-viewer id="paused-change-demo"
                                 src="https://cdn.glitch.com/5b7a8ebc-1de7-47b4-8928-0788606b2faf%2FmodeloFORMULA_retirada.glb?v=1598569548732"      
                                 shadow-intensity="3"
@@ -232,10 +234,11 @@
                                     border-radius: 30px;
                                     border: none;
                                     position: absolute; 
-                                    top: 6vh; 
+                                    top: 32vh; 
                                     right: 2vw; ">
-                                    <img src="assets/img/formula.svg" width="85vw"> 
+                                    <a href="https://hollox.com.br/predio.php"><img id="arButton3" src="https://cdn.glitch.com/33362749-0d41-4803-8d25-03abce69741a%2FbuttonAR_BR.png?v=1598445617658" width="130vw"  height="30"></a> 
                                 </div>  
+                                <button slot="ar-button" style="visibility: hidden;"></button>
                             </model-viewer>                            
                           </div>                                      
                         </div>
