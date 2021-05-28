@@ -1,0 +1,133 @@
+@charset "UTF-8";
+/*!
+* Start Bootstrap - Resume v6.0.2 (https://startbootstrap.com/theme/resume)
+* Copyright 2013-2020 Start Bootstrap
+* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
+*/
+/*!
+ * Bootstrap v4.5.3 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+ 
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #bd5d38;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #bd5d38;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Rajdhani';
+  font-style: normal;    
+}
+
+h4{
+  color: aliceblue;
+}
+
+h4:hover{
+  color: rgb(0, 135, 253);
+}
+
+body{
+  background-color: rgba(232, 232, 232);
+}
+
+#card {  
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+  height: 85vh;  
+  overflow: hidden;  
+  background-color: transparent;  
+  z-index: 99;
+}
+
+model-viewer { 
+  width: 100%;
+  height: 100%;      
+  --progress-bar-height: 5px;
+  --progress-bar-color: transparent;   
+  --poster-color: transparent; 
+}
+
+.verticalAlign{
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;  
+}
+
+button {
+  -webkit-appearance: none !important;
+}
+
+.bg-nav{
+  background-color: #415468 !important;    
+  opacity: 0.85;
+  text-align: center;
+}
+
+/*Screen Desktop*/
+@media (min-width: 770px)
+{ 
+  .containerCAPA{  
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/img/capaDesktop.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; opacity: 1;  
+  } 
+  
+  .container02{  
+    width: 100%;
+    height: 100vh;
+    background-color: saddlebrown;
+  } 
+}
+
+/*Screen Mobile*/
+@media (max-width: 770px)
+{
+  .containerCAPA{  
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/img/capaMobile.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; opacity: 1;  
+  } 
+  
+  .container02{  
+    width: 100%;
+    height: 100vh;
+    background-color: saddlebrown;
+  }   
+}
