@@ -49,10 +49,11 @@ h1,h2,h3,h4,h5,h6{
 
 h4{
   color: aliceblue;
+  font-size: 125%;
 }
 
 h4:hover{
-  color: rgb(0, 135, 253);
+  color: var(--info);
 }
 
 body{
@@ -89,9 +90,23 @@ button {
 }
 
 .bg-nav{
-  background-color: #415468 !important;    
+  background-color: var(--dark) !important;    
   opacity: 0.85;
   text-align: center;
+}
+
+/*Personalizando dropdown*/
+.dropdown-toggle{
+  background-color: transparent !important;
+  border: none;
+}
+
+.dropdown-menu {
+  min-width:inherit;
+}
+
+.navbar-toggler{  
+  border-color: aliceblue !important;
 }
 
 /*Screen Desktop*/
@@ -99,7 +114,7 @@ button {
 { 
   .containerCAPA{  
     width: 100%;
-    height: 80vh;
+    height: 85vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/img/capaDesktop.gif');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -118,7 +133,7 @@ button {
 {
   .containerCAPA{  
     width: 100%;
-    height: 80vh;
+    height: 85vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/img/capaMobile.gif');
     background-repeat: no-repeat;
     background-attachment: fixed;
