@@ -19,6 +19,9 @@
         <!-- CSS -->
         <link href="css/styles.css?1238477045" rel="stylesheet" />
         <link href="css/stylesAnimationFont.css" rel="stylesheet" />
+
+        <script type="text/javascript" src="../libs/floating-whatsapp/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="../libs/floating-whatsapp/floating-wpp.min.css">
     </head>
 
     <body>
@@ -33,7 +36,7 @@
             <div class="navbar-nav" style="margin-right: 20px; margin: 5px;">
               <a class="navbar-brand img-logo" href="#"><img src="../assets/img/logo.png" class="img-size"></a>
               <a class="nav-item nav-link" href="/">INÍCIO</span></a>
-              <a class="nav-item nav-link" href="about">SOBRE NÓS</a>
+              <a class="nav-item nav-link" href="#about">SOBRE NÓS</a>
               <a class="nav-item nav-link" href="#contact">CONTATO</a>
             </div>
           </div>
@@ -66,18 +69,13 @@
         </div>
       </div>
 
+      <div id="myDiv"></div>
+
       <footer class="justify-content-center" style="position: relative; display: flex;">
         <div style="position: absolute; bottom: 0; z-index: 10; margin-bottom: 10px;">
           © Copyright 2022 Hollox · All rights reserved
         </div>
       </footer>
-
-      <script>
-        const page = {
-            "name": "Update Vila Madalena",
-            "tag_ads" : true
-        }
-      </script>
       
       <!-- Modal -->
       <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -136,10 +134,24 @@
       <!-- Bootstrap js-->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="../libs/floating-whatsapp/floating-wpp.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
       
       <script src="js/scripts.js"></script>
       <script src="js/scriptsAnimationFont.js"></script>
+
+      <script>
+        $('#myDiv').floatingWhatsApp({
+            phone: '5547991328280',
+            headerTitle: 'Fale com a gente pelo WhatsApp',
+            popupMessage: 'Olá, escreva sua mensagem que nossa equipe entrará em contato assim que possivel.',
+            showPopup: true,
+            zIndex: 100,
+            position: 'right',
+            size: '60px'
+        });
+      </script>
+
     </body>
 </html>
