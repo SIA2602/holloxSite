@@ -17,14 +17,14 @@ function hiddenElement() {
 }
 
 $(".architeture").hover( function() {
-    $(".background-gif").css('background-image', 'url(./assets/img/background02.gif)')
+    $(".background-gif").css('background-image', 'url(../../assets/img/background02.gif)')
     $("#home-text-desktop").css({ display: "none" })
     $("#home-text-desktop-architeture").css({ display: "block", visibility: "visible" })
     $("#home-text-desktop-industry").css({ display: "none", visibility: "hidden" })
 })
 
 $(".industry").hover( function() {
-    $(".background-gif").css('background-image', 'url(./assets/img/background03.gif)')
+    $(".background-gif").css('background-image', 'url(../../assets/img/background03.gif)')
     $("#home-text-desktop").css({ display: "none" })
     $("#home-text-desktop-architeture").css({ display: "none", visibility: "hidden" })
     $("#home-text-desktop-industry").css({ display: "block", visibility: "visible" })

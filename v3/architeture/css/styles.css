@@ -28,7 +28,7 @@ body {
 .background-gif {
   width: 100%;
   height: 100vh;
-  background-image: url("../assets/img/background01.gif");
+  background-image: url("../../assets/img/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -38,10 +38,22 @@ body {
   z-index: -1;
 }
 
+.cell-phone {
+  width: 100%;
+  height: 60vh;
+  background-image: url("../../assets/img/cellPhone.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  top: calc(65vh - 50%);
+  z-index: 10;
+}
+
 .background-superposition {
   width: 100%;
   height: 100vh;
-  background-image: url("../assets/img/background-superposition.svg");
+  background-image: url("../../assets/img/background-superposition.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -59,6 +71,7 @@ body {
   backdrop-filter: blur(20px);
   position: absolute;
   top: 0;
+  right: 0;
   z-index: 3;
   padding: 20px;
 }
@@ -98,7 +111,7 @@ body {
 
 .home-text-desktop, .home-text-mobile {
   font-weight: 100;
-  text-align: right;
+  text-align: left;
 }
 
 #home-text-desktop-architeture, #home-text-desktop-industry {
@@ -107,8 +120,17 @@ body {
 
 @media (min-width: 576px), (max-width: 768px) {
 
+  .text-main {
+    font-size: 1.8em !important;
+  }
+
+  .sub-text-main {
+    font-size: 1em !important;
+  }
+
   .background-select {
-    width: 100%;
+    width: auto;
+    min-width: 15%;
   }
 
   .navbar-brand {
@@ -133,7 +155,7 @@ body {
   .architeture {
     width: auto;
     height: 20vh;
-    background-image: url("../assets/img/button_architeture.png");
+    background-image: url("../../assets/img/button_architeture.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -142,7 +164,7 @@ body {
   .industry {
     width: auto;
     height: 20vh;
-    background-image: url("../assets/img/button_industry.png");
+    background-image: url("../../assets/img/button_industry.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -157,14 +179,27 @@ body {
     top: 0;
     left: 0;
     border-radius: 5px;
-  }  
+  }
+
+  .cell-phone {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
 
+  .text-main {
+    font-size: 2.5em !important;
+  }
+
+  .sub-text-main {
+    font-size: 1.5em !important;
+  }
+
   .background-select {
     width: auto;
     padding: 30px;
+    min-width: 30%;
   }
 
   .navbar-brand {
@@ -195,14 +230,27 @@ body {
     top: 0;
     left: 0;
     border-radius: 5px;
-  }  
+  }
+
+  .cell-phone {
+    display: block;
+  }
 }
 
 @media (min-width: 1024px) {
 
+  .text-main {
+    font-size: 2.5em !important;
+  }
+
+  .sub-text-main {
+    font-size: 1.5em !important;
+  }
+
   .background-select {
     width: auto;
     padding: 30px;
+    min-width: 30%;
   }
 
   .navbar-brand {
@@ -233,14 +281,27 @@ body {
     top: 0;
     left: 0;
     border-radius: 5px;
+  }
+
+  .cell-phone {
+    display: block;
   }
 }
 
 @media (min-width: 1200px) {
 
+  .text-main {
+    font-size: 2.5em !important;
+  }
+
+  .sub-text-main {
+    font-size: 1.5em !important;
+  }
+  
   .background-select {
     width: auto;
     padding: 30px;
+    min-width: 30%;
   }
 
   .navbar-brand {
@@ -271,5 +332,9 @@ body {
     top: 0;
     left: 0;
     border-radius: 5px;
+  }
+
+  .cell-phone {
+    display: block;
   }
 }
