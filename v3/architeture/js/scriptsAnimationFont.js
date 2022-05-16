@@ -2,7 +2,7 @@
 const typedTextSpan = document.querySelector(".typed-text-architeture");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["APRESENTA", "VISUALIZA", "VENDE"];
+const textArray = ["VENDE", "VISITA", "APRESENTA"];
 const typingDelay = 200;
 const erasingDelay = 100;
 const newTextDelay = 2000; // Delay between current and next text
